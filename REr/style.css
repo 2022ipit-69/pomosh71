@@ -1,0 +1,514 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #111;
+  }
+  
+  .header {
+    background: linear-gradient(135deg, #FA0404, #FF5F08);
+    color: white;
+    padding: 40px 20px;
+    text-align: left;
+  }
+  
+  .header h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto 200px auto;
+  }
+  
+  
+  .header button {
+    padding: 12px 24px;
+    background-color: #c40000;
+    color: white;
+    border: none;
+    font-size: 2em;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .contact {
+    text-align: center;
+    padding: 30px;
+  }
+  
+  .question {
+    color: #d10000;
+    font-weight: bold;
+    font-size: 2em;
+  }
+  
+  .services {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .services h2 {
+    background: #ff3c00;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .service-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .service {
+    width: 30%;
+    background: linear-gradient(100deg, #FA0404, #FF5F08);
+    padding: 15px;
+    border-radius: 12px;
+    margin: 10px 0;
+  }
+  
+ .service img {
+  width: 125px;
+  height: auto;
+  transition: transform 0.3s ease-in-out; /* Плавная анимация при изменении размера */
+}
+
+.service:hover img {
+  transform: scale(1.1); /* Увеличиваем картинку на 10% при наведении */
+}
+
+  
+  .about {
+    padding: 30px;
+    text-align: center;
+  }
+  .about p {
+    color: rgb(11, 2, 2);
+    padding: 10px;
+    font-size: 2em; 
+    text-align:left;
+  }
+  .documents p {
+    color: rgb(11, 2, 2);
+    padding: 10px;
+    font-size: 2em; 
+    text-align:left;
+  }
+  .about h2 {
+    background: #ff3c00;
+    color: white;
+    padding: 10px;
+    
+  }
+  
+  .about img {
+    width: 350px;
+    margin-top: -110px;
+    display: block;
+  margin-left: auto
+  }
+  
+ 
+  
+  .documents h2 {
+    background: #ff3c00;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 1400px; /* Уменьшаем ширину */
+    margin-left: auto;
+    margin-right: auto;
+  }
+ 
+  
+  .note {
+    font-size: 2em;
+    color: #df1e1e;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  
+  footer {
+    background: #ff0000;
+    text-align: left;
+    padding: 20px;
+    font-size: 1.5em;
+    color: #fff;
+  }
+  
+  .socials img {
+    width: 50px;
+    margin: 10px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-left {
+    max-width: 60%;
+  }
+  
+  .header-right img {
+    max-width: 450px;   /* увеличили изображение */
+    height: auto;
+    margin-top: 100px;   /* опустили вниз */
+  }
+  .header-left h1 {
+    position: relative; /* важно для позиционирования псевдоэлемента */
+    color: white;
+    padding: 10px;
+    overflow: hidden; /* чтобы луч не выходил за края */
+    cursor: pointer; /* курсор-указатель при наведении */
+  }
+  
+  /* Сам "луч света" */
+  .header-left h1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.6) 50%,
+      rgba(255, 255, 255, 0.2) 100%
+    );
+    transform: skewX(-25deg);
+    pointer-events: none; /* чтобы луч не мешал кликам */
+  }
+  
+  /* Анимация при наведении */
+  .header-left h1:hover::after {
+    animation: shine 0.8s forwards;
+  }
+  
+  /* Кадры анимации движения луча */
+  @keyframes shine {
+    0% {
+      left: -75%;
+    }
+    100% {
+      left: 125%;
+    }
+  }
+  
+  
+  .circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 70%;
+    background: linear-gradient(135deg, #FA0404, #FF5F08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px auto;
+    box-shadow: 0 4px 8px rgb(255, 252, 252);
+  }
+  
+  .circle img {
+    width: 60px;
+    height: 60px;
+  }
+  .service img {
+    width: 125px;
+    height: auto;
+  }
+    
+  button {
+    font-size: 2em;
+    padding: 20px 30px;
+    background-color: white;
+    color: #ff3c00;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color:rgb(255, 127, 8);
+    transform: scale(1.05);
+  }
+  
+  .contact p {
+    font-size: 2em;  /* Увеличили размер шрифта */
+    line-height: 1.6;
+    margin-bottom: 20px;  /* Добавили отступ снизу */
+  }
+  
+  .contact .question {
+    font-size: 2em;  /* Увеличили текст в вопросе */
+    font-weight: bold;
+    margin-bottom: 15px;  /* Отступ снизу */
+  }
+  
+  .service p {
+    font-size: 2em;       /* Увеличиваем текст */
+    color: white;          /* Белый цвет текста */
+    font-weight: bold;     /* Немного выделим */
+    text-align: center;    /* Центруем текст под иконкой */
+    margin-top: 10px;
+  }
+ 
+  /* Затемнённый фон */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000; /* Поверх всех элементов */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Чёрный с прозрачностью */
+}
+
+/* Окно формы */
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Крестик закрытия */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 2em;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Элементы формы */
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.modal-content button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff3c00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: #7e2509;
+}
+/* Новое меню перед блоком "Вам нужна помощь" */
+.main-menu {
+  background-color: #e61d1d; /* Оранжевый фон */
+  padding: 20px 0;
+}
+
+.main-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Центрируем меню по горизонтали */
+}
+
+.main-menu ul li {
+  margin: 0 20px;
+}
+
+.main-menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.main-menu ul li a:hover {
+  background-color: #ffaa33; /* Темный оттенок при наведении */
+}
+
+/* Кнопка переключения темы */
+.theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fff;
+  color: #111;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 9999;
+}
+
+/* Темная тема */
+body.dark-mode {
+  background-color: #111;
+  color: #eee;
+}
+
+body.dark-mode .header {
+  background: linear-gradient(135deg, #333, #111);
+  color: #fff;
+}
+
+body.dark-mode .services h2,
+body.dark-mode .about h2,
+body.dark-mode .documents h2 {
+  background: #444;
+  color: #fff;
+}
+
+body.dark-mode .service {
+  background: linear-gradient(100deg, #222, #444);
+}
+
+body.dark-mode .modal-content {
+  background-color: #222;
+  color: #fff;
+}
+
+body.dark-mode .modal-content input,
+body.dark-mode .modal-content textarea {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+/* Темная тема — стили для секции "О нас" */
+body.dark-mode .about {
+  background-color: #111; /* Тёмный фон */
+}
+
+body.dark-mode .about p,
+body.dark-mode .about h2 {
+  color: #fff; /* Белый текст */
+}
+/* Темная тема — стили для секции "Документы" */
+body.dark-mode .documents {
+  background-color: #111; /* Тёмный фон */
+}
+
+body.dark-mode .documents h2,
+body.dark-mode .documents p,
+body.dark-mode .documents .note {
+  color: #fff; /* Белый текст */
+}
+/* Темная тема — фон меню */
+body.dark-mode .main-menu {
+ background: linear-gradient(135deg, #333, #111);
+}
+
+body.dark-mode .main-menu a {
+  color: #ffffff; /* Белый текст ссылок */
+}
+/* Темная тема — кнопка "Попросить помощи" */
+body.dark-mode .header button {
+  background-color: #ff8800;  /* Яркий оранжевый на тёмном фоне */
+  color: #000;                /* Чёрный текст для контраста */
+}
+
+body.dark-mode .header button:hover {
+  background-color: #ffaa33;  /* Светлее при наведении */
+}
+/* Кнопка переключения темы в тёмной теме */
+body.dark-mode .theme-toggle {
+  background-color: #222;        /* Базовый цвет кнопки */
+  color: #fff;                   /* Белый текст */
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* При наведении — такой же как у кнопки "Попросить помощи" */
+body.dark-mode .theme-toggle:hover {
+  background-color: #ffaa33;     /* Такой же как у .header button:hover */
+  color: #000;
+}
+/* Цвет текста "Вам или вашим близким нужна помощь?" в тёмной теме */
+body.dark-mode .question {
+  color:#ffaa33 ; /* Тёплый светлый оттенок, хорошо читаемый на тёмном фоне */
+}
+/* Цвет кружков в тёмной теме */
+body.dark-mode .circle {
+  background: linear-gradient(135deg, #ffaa33, #9a1616); /* Тёмно-серый градиент */
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1); /* Светлый мягкий свет */
+}
+
+/* Цвет футера в тёмной теме */
+body.dark-mode footer {
+  background: linear-gradient(100deg, #222, #444);
+  color: #f0f0f0;            /* Светлый текст */
+}
+
+/* Цвет иконок в футере (если PNG — не изменится, но для SVG или фильтра можно добавить: */
+body.dark-mode .socials img {
+  filter: brightness(0.8);  /* Немного приглушённый эффект */
+}
+/* Цвет фона страницы в тёмной теме */
+body.dark-mode {
+  background-color: #121212; /* Очень тёмный фон для всей страницы */
+  color: #f0f0f0;            /* Светлый текст для контраста */
+}
+/* Стиль для кнопки паузы */
+.pause-btn {
+  position: fixed;
+  top: 20px; /* Фиксация сверху */
+  right: 20px; /* Фиксация справа */
+  background-color: #ff3c00;
+  color: white;
+  font-size: 2em;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s;
+}
+
+.pause-btn:hover {
+  background-color: #e61d1d;
+}
+
+/* Стиль для всего контента */
+.content {
+  padding: 40px;
+  font-family: Arial, sans-serif;
+  font-size: 2em;
+}
